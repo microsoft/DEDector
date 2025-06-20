@@ -9,7 +9,9 @@ Dry Eye Disease (DED) is an eye condition characterized by abnormalities in tear
 
 In this repository, we provide the code for the DEDector video-processing pipeline. The input to the pipeline is a mire video recorded using the [SmartKC](https://github.com/microsoft/SmartKC-A-Smartphone-based-Corneal-Topographer) hardware. The output from the pipeline is the Non-Invasive Break-Up Time (NIBUT). Here, we describe the details of the steps of the video-processing pipeline.
 
-TODO: Add overview figure of the pipeline.
+<p align='center'>
+      <img src="./readme_images/DED-method-overview.png" width="800" height="350" title="Overview">
+</p>
 
 ### Dependencies:
 The dependencies required for this project are specified in the `requirements.txt` file. These can be installed using `pip` or `conda`, using the command:
