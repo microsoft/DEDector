@@ -79,7 +79,7 @@ class segment_and_get_center:
             ToTensor(), Normalize([.485, .456, .406], [.229, .224, .225])])
         # loading checkpoint
         device = torch.device('cuda:0') if torch.cuda.is_available() else 'cpu'
-        checkpoint = torch.load(checkpoint_path, map_location=device)
+        checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
         self.net = model()
         self.net.load_state_dict(checkpoint)
 
